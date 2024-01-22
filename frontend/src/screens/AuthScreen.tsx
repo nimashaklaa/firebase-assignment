@@ -1,10 +1,15 @@
 import {useState} from "react";
+import {createUserWithEmailAndPassword} from 'firebase/auth'
 import './AuthScreen.css'
+import {auth} from '../config/firebase-config'
 const AuthScreen= () =>{
     const [email ,setEmail] = useState('');
     const [password, setPassword] = useState('');
 
-    const handleLogin =()=>{};
+    const handleLogin =()=>{
+       createUserWithEmailAndPassword(auth,email,password)
+           .then(async (userCredentials))
+    };
     return(
         <div className="auth-container">
             <input

@@ -1,0 +1,15 @@
+import {initializeApp} from 'firebase/app'
+import {getAuth} from 'firebase/auth'
+export abstract class FirebaseConfig{
+    public static webFirebaseConfig ={
+        apiKey: "AIzaSyB9B1puKwpY2o7AJKXVSKb0a1G2qbwyqsc",
+        authDomain: "fir-example-dfa02.firebaseapp.com",
+        projectId: "fir-example-dfa02",
+        storageBucket: "fir-example-dfa02.appspot.com",
+        messagingSenderId: "434731570688",
+        appId: "1:434731570688:web:452de5291e1fc5724d6ae5"
+    }
+}
+export const firebaseApp = initializeApp(FirebaseConfig.webFirebaseConfig)
+
+export const auth = getAuth(firebaseApp)

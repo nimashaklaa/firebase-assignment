@@ -26,7 +26,7 @@ const AuthScreen= () =>{
 
     useEffect(()=>{
         if(isAuthenticated){
-            navigate('FirestoreWriteScreen');
+            navigate('/FirestoreWriteScreen');
         }
     },[isAuthenticated,navigate])
     return(

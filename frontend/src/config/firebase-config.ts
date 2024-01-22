@@ -1,6 +1,7 @@
 import {initializeApp} from 'firebase/app'
 import {getAuth} from 'firebase/auth'
 import {getFirestore} from 'firebase/firestore'
+import {getStorage} from "firebase/storage";
 export abstract class FirebaseConfig{
     public static webFirebaseConfig ={
         apiKey: "AIzaSyB9B1puKwpY2o7AJKXVSKb0a1G2qbwyqsc",
@@ -16,3 +17,5 @@ export const firebaseApp = initializeApp(FirebaseConfig.webFirebaseConfig)
 export const auth = getAuth(firebaseApp)
 
 export const db = getFirestore(firebaseApp)
+
+export const storage = getStorage(firebaseApp)

@@ -1,10 +1,23 @@
 import {useState} from "react";
+import {getStorage,ref,uploadBytes} from 'firebase/storage'
 import './ImageUploadScreen.css'
 const ImageUploadScreen=()=>{
     const [image, setImage] = useState<File|null>(null);
 
     const handleUpload = () =>{
-        console.log(image);
+        try{
+           if(image){
+               const storage = getStorage();
+               const storageRef = ref(storage, `images/${image.name}`);
+
+               uploadBytes(storageRef, image).then((snapshot) => {
+                   console.log('Uploaded a blob or file!',snapshot.ref);
+               });
+           }
+        }catch(error:any){
+            throw new Error(`Upload a bolb file ${error}`)
+        }
+
     }
 
     return(

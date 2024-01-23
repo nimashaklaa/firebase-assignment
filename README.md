@@ -185,11 +185,10 @@ http function initialized (http://127.0.0.1:5001/fir-example-dfa02/us-central1/h
 
 output: 
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/18a9c05a-9a67-4cff-9c45-870a42b2d88a/fb7811a0-39ce-4f86-9ce0-20775bd2b830/Untitled.png)
 
 ### INITATE THE FIREBASE AND WORKING WITH FIREBASE IN FRONTEND FRAMEWORKS
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/18a9c05a-9a67-4cff-9c45-870a42b2d88a/7f547a6a-8fec-42ba-bef0-b92e1da6b1e9/Untitled.png)
+
 
 ## Authentication workings
 
@@ -205,7 +204,7 @@ const handleLogin =()=>{
  })};
 ```
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/18a9c05a-9a67-4cff-9c45-870a42b2d88a/01e8875f-7111-41fd-896d-f487ee3a9ae1/Untitled.png)
+
 
 ```
 AuthScreen.tsx:14:     
@@ -216,7 +215,7 @@ AuthScreen.tsx:20  Uncaught (in promise) Error: User sign up failed with error F
 
 why?
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/18a9c05a-9a67-4cff-9c45-870a42b2d88a/e76a7f40-7e86-4c4d-936b-18961b9d5612/Untitled.png)
+
 
 Now it is successful
 
@@ -280,7 +279,7 @@ service cloud.firestore {
 
 So, convert it to true.
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/18a9c05a-9a67-4cff-9c45-870a42b2d88a/7bcc897e-c03d-4df7-9d44-16ad981dfa5c/Untitled.png)
+
 
 ## File upload.
 
@@ -336,7 +335,7 @@ service firebase.storage {
 }
 ```
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/18a9c05a-9a67-4cff-9c45-870a42b2d88a/96b9c576-ffe0-41fb-b6ec-d394fd9389fd/Untitled.png)
+
 
 ```tsx
 Uploaded a blob or file!
@@ -407,11 +406,11 @@ createUserWithEmailAndPassword(*auth*,email,password)
 		});
 ```
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/18a9c05a-9a67-4cff-9c45-870a42b2d88a/ed7882f3-2f8c-4d39-bd8d-0dcadf49251d/Untitled.png)
+
 
 For sensitive data we use ondocumnettrig**g**ers 
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/18a9c05a-9a67-4cff-9c45-870a42b2d88a/78445f60-9ab6-427d-be44-b7dcfab143f2/Untitled.png)
+
 
 ### Using Zustand
 
